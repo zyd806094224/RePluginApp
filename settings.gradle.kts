@@ -9,6 +9,10 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+        maven {
+            url = uri("http://maven.geelib.360.cn/nexus/repository/replugin/")
+            isAllowInsecureProtocol = true
+        }
     }
 }
 dependencyResolutionManagement {
@@ -16,6 +20,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url = uri("http://maven.geelib.360.cn/nexus/repository/replugin/")
+            isAllowInsecureProtocol = true
+        }
     }
 }
 
